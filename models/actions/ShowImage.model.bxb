@@ -1,0 +1,20 @@
+action (ShowImage) {
+  description (사용자의 발화에 맞춘 이미지를 가져옴)
+  type(Search)
+  
+  collect {
+    // 보통은 발화를 통해(고양이랑 강아지를 잘 말했다면...) 이 부분이 해결됨
+    input (modeInfo) {
+      type (ModeInfo)
+      min (Required) max (One)
+      
+      // 유저가 선택한 값이 없을 경우 ChooseMode를 실행한다.
+      default-init {
+        intent{
+          goal : ChooseMode
+        }
+      }
+    }
+  }
+  output (PhotoInfo)
+}

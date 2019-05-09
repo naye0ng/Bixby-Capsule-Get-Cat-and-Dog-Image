@@ -1,0 +1,22 @@
+action (ChooseMode) {
+  description (고양이 강아지 중 선택하기)
+  type(Search)
+  
+  collect {
+    input (mode) {
+      type (Mode)
+      min (Required) max (One)
+    }
+  }
+  output (ModeInfo){
+    // 일반적으로 action에서는 output을 만들기 위한 js코드가 필요하다.
+    // output이 그대로 전달되는 경우에는 js가 필요 없다.
+    //evaluate 를 사용하여 js 없이 action을 가능하게 한다.
+    // https://bixbydevelopers.com/dev/docs/reference/type/action.output.evaluate
+    evaluate{
+      ModeInfo{
+        mode : $expr(mode)
+      }
+    }
+  }
+}

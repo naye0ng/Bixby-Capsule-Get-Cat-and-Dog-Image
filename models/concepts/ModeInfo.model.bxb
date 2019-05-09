@@ -1,0 +1,7 @@
+structure (ModeInfo) {
+  description (결과값으로 mode를 전달 받고 전달하기 위해 필요)
+  property (mode) {
+    type (Mode)
+    min (Required) max (One)
+  }
+}
