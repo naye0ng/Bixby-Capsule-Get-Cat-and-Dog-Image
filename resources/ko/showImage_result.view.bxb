@@ -1,0 +1,13 @@
+result-view {
+  match: PhotoInfo(this)
+//   TODO : 다이얼 생성후에 다시
+//   message{ 
+//   }
+  render{
+    layout-macro (showImage_layout){
+      param (photoInfo){
+        expression (this)
+      }
+    }
+  }
+}

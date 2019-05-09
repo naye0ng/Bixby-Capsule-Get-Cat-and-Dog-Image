@@ -1,0 +1,24 @@
+layout-macro-def(showImage_layout) {
+  params {
+    param (photoInfo) { // view안에 최종적으로 PhotoInfo의 자료형이 들어올 것이다.
+      type (PhotoInfo)
+      min (Required)
+      max (One)
+    }
+  }
+
+  content {
+    image-card {
+      aspect-ratio (4:3)
+      title-area{
+        halign(Start)
+        slot1{
+          text {
+            value("사진")//photoInfo.photo.caption
+            style (Detail_L)
+          }
+        }}
+      image-url("[#{value(photoInfo.photo.url)}]")
+    }
+  }
+}
