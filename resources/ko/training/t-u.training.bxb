@@ -1,0 +1,5 @@
+train (t-up6efhwx9877z9bnnu66txic5) {
+  utterance ("[g:PhotoInfo] (강아지)[v:Mode:dog] 사진 보여줘")
+  plan (Y2BlkE3OT0k1MjDQS04siU/MS4lPyU/XC8jIL8n3zEvLxy4dnJFf7pmbmJ7KIINN2hcoBtYsh03WOSM/vzgVpIZBApduBhYGRgYmBmYgzQBlMYJZIMAExEBxAA==)
+  last-modified (1557391746187)
+}

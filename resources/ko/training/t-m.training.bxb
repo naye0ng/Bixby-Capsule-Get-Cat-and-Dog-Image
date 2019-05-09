@@ -1,0 +1,5 @@
+train (t-mreo3lbach0r7hnsas3x7s7w0) {
+  utterance ("[g:PhotoInfo] (고양이)[v:Mode:cat] 사진 보여줘")
+  plan (Y2BlkE3OT0k1MjDQS04siU/MS4lPyU/XC8jIL8n3zEvLxy4dnJFf7pmbmJ7KIINN2hcoBtYsh03WOSM/vzgVpIZBApduBhYGRgYmBmYgzQBlMYJZIMAExEBxAA==)
+  last-modified (1557390678697)
+}
