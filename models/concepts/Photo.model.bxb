@@ -1,0 +1,4 @@
+structure (Photo) {
+  // concept을 복제한다고 하는데, 개인적인 생각으로는 js에서 넣는 데이터 형태 그대로 가져오거나 image 자체?
+  role-of (viv.core.BaseImage)
+}
