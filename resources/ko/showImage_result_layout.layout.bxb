@@ -9,12 +9,12 @@ layout-macro-def(showImage_layout) {
 
   content {
     image-card {
-      aspect-ratio (4:3)
+      aspect-ratio (1:1)
       title-area{
         halign(Start)
         slot1{
           text {
-            value("사진")//photoInfo.photo.caption
+            value("[#{value(photoInfo.photo.caption)}]")
             style (Detail_L)
           }
         }}
